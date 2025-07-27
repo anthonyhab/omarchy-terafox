@@ -1,0 +1,131 @@
+/**
+ * @name system24 (terafox)
+ * @description a tui-like discord theme. based on terafox theme.
+ * @author refact0r
+ * @version 2.0.0
+ * @invite nz87hXyvcy
+ * @website https://github.com/refact0r/system24
+ * @source https://github.com/refact0r/system24/blob/master/theme/system24-catppuccin-macchiato.theme.css
+ * @authorId 508863359777505290
+ * @authorLink https://www.refact0r.dev
+*/
+
+/* import theme modules */
+@import url('https://refact0r.github.io/system24/build/system24.css');
+
+body {
+    /* font, change to '' for default discord font */
+    --font: 'DM Mono'; /* change to '' for default discord font */
+    --code-font: 'DM Mono'; /* change to '' for default discord font */
+    font-weight: 300; /* text font weight. 300 is light, 400 is normal. DOES NOT AFFECT BOLD TEXT */
+    letter-spacing: -0.05ch; /* decreases letter spacing for better readability. recommended on monospace fonts.*/
+
+    /* sizes */
+    --gap: 12px; /* spacing between panels */
+    --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
+    --border-thickness: 2px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
+    --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
+
+    /* animation/transition options */
+    --animations: on; /* off: disable animations/transitions, on: enable animations/transitions */
+    --list-item-transition: 0.2s ease; /* transition for list items */
+    --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
+
+    /* top bar options */
+    --top-bar-height: var(--gap); /* height of the top bar (discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */
+    --top-bar-button-position: titlebar; /* off: default position, hide: hide buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to channel titlebar (will hide title) */
+    --top-bar-title-position: off; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */
+    --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color (like old discord) */
+
+    /* window controls */
+    --custom-window-controls: off; /* off: default window controls, on: custom window controls */
+    --window-control-size: 14px; /* size of custom window controls */
+
+    /* dms button options */
+    --custom-dms-icon: hide; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */
+    --dms-icon-svg-url: url(''); /* icon svg url. MUST BE A SVG. */
+    --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
+    --dms-icon-color-before: var(--icon-secondary); /* normal icon color */
+    --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
+    --custom-dms-background: image; /* off to disable, image to use a background image (must set url variable below), color to use a custom color/gradient */
+    --dms-background-image: url(''); /* background image for dms. MUST BE A HTTPS URL */
+    --dms-background-image-blur: 10px; /* background image blur in px */
+    --dms-background-overlay: hsla(220, 10%, 10%, 0.8); /* overlay color for background image */
+    --dms-background-color: linear-gradient(var(--bg-4) 0%, hsla(hue, chroma, luma, 0.7) 70%); /* custom background color/gradient for dms. automatically uses the accent color hue */
+
+    /* emoji options */
+    --emoji: twemoji; /* mutant: use mutant emoji, twemoji: use twitter emoji */
+
+    /* mention options */
+    --mention-shape: round; /* round: rounded mentions, square: square mentions */
+
+    /* ===== TERAFOX THEME COLORS ===== */
+    /* text colors */
+    --text-0: var(--bg-4); /* text on colored elements */
+    --text-1: hsl(174, 6%, 92%); /* bright text on colored elements */
+    --text-2: #e6eaea; /* headings and important text */
+    --text-3: #cbd9d8; /* normal text */
+    --text-4: #587b7b; /* icon buttons and channels */
+    --text-5: #496360; /* muted channels/chats and timestamps */
+    
+    /* background and dark colors */
+    --bg-1: #2d4f56; /* dark buttons when clicked */
+    --bg-2: #254147; /* dark buttons */
+    --bg-3: #1d3337; /* spacing, secondary elements */
+    --bg-4: #152528; /* main background color */
+    --hover: hsla(180, 16%, 48%, 0.1); /* channels and buttons when hovered */
+    --active: hsla(180, 16%, 48%, 0.2); /* channels and buttons when clicked or selected */
+    --message-hover: hsla(180, 16%, 48%, 0.05); /* messages when hovered */
+    
+    /* accent colors */
+    --accent-hue: 180; /* main accent color hue (0-360) [default: 235] */
+    --accent-saturation: 20%; /* main accent color saturation (0%-100%) [default: 85.6%] */
+    --accent-lightness: 58%; /* main accent color lightness (0%-100%) [default: 71.8%] */
+    --accent-opacity: 1; /* main accent color opacity (0-1) [default: 1] */
+    --accent-text-color: #152528; /* color of text on accent colored elements. set to 'auto' to determine automatically */
+    
+    /* borders */
+    --border-1: #2d4f56; /* soft border color */
+    --border-2: #254147; /* default border color */
+    --border-3: #587b7b; /* active border color */
+    
+    /* status dot colors */
+    --online-dot: #7aa4a1; /* green */
+    --dnd-dot: #e85c51; /* red */
+    --idle-dot: #fda47f; /* yellow */
+    --streaming-dot: #ad5c7c; /* magenta */
+    
+    /* mention and ping */
+    --mention-txt: #152528;
+    --mention-bg: #7aa4a1;
+    --mention-overlay: hsla(180, 20%, 58%, 0.1);
+    --mention-hover: hsla(180, 20%, 58%, 0.2);
+    --ping: #e85c51; /* unread messages dot color */
+    
+    /* command prefix */
+    --command-symbol: '>'; /* symbol to show before slash commands */
+    
+    /* codeblock colors */
+    --code-markup: #5a93aa;
+    --code-background: var(--bg-3);
+    --code-border: var(--border-2);
+    
+    /* reaction colors */
+    --reaction-bg: hsla(180, 20%, 58%, 0.1);
+    --reaction-bg-hover: hsla(180, 20%, 58%, 0.2);
+    --reaction-txt: var(--text-2);
+    
+    /* yellow colors */
+    --yellow-to-orange: linear-gradient(180deg, hsl(45, 100%, 69%) 0%, hsl(25, 100%, 67%) 100%);
+    --yellow: #fda47f;
+    --orange: #ff8349;
+    
+    /* various colors */
+    --pink: #cb7985;
+    --green: #7aa4a1;
+    --cyan: #a1cdd8;
+    --blue: #5a93aa;
+    --purple: #ad5c7c;
+    --red: #e85c51;
+    --white: #e6eaea;
+}

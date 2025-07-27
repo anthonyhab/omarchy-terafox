@@ -1,0 +1,300 @@
+/* Terafox Firefox Theme Colors */
+/* Import this file in your userChrome.css to apply Terafox colors to Firefox-Mod-Blur */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* ============== Core Theme Colors ==================== */
+    /* These are the base colors that define the Terafox theme */
+    --theme-bg-0: #0a0f10 !important; /* Darkest - for inactive/backdrop */
+    --theme-bg-1: #0f1c1e !important; /* Dark - main UI background */
+    --theme-bg-2: #152528 !important; /* Medium dark */
+    --theme-bg-3: #1d3337 !important; /* Medium - cards, inputs */
+    --theme-bg-4: #254147 !important; /* Light - hover states */
+    --theme-bg-5: #2d4f56 !important; /* Lighter - active states */
+    
+    --theme-fg-0: #e6eaea !important; /* Main text color */
+    --theme-fg-1: #eaeeee !important; /* Brighter text */
+    --theme-fg-2: #cbd9d8 !important; /* Muted text */
+    
+    --theme-accent: #7aa4a1 !important; /* Primary accent - Terafox green */
+    --theme-accent-secondary: #fda47f !important; /* Secondary accent - yellow */
+    --theme-accent-tertiary: #ad5c7c !important; /* Tertiary accent - magenta */
+    
+    --theme-border: #254147 !important; /* Main border color */
+    --theme-border-subtle: #2d4f56 !important; /* Subtle borders */
+    
+    /* Derived colors */
+    --theme-accent-translucent-25: rgba(122, 164, 161, 0.25) !important;
+    --theme-accent-translucent-32: rgba(122, 164, 161, 0.32) !important;
+    --theme-accent-translucent-39: rgba(122, 164, 161, 0.39) !important;
+    --theme-accent-translucent-50: rgba(122, 164, 161, 0.5) !important;
+    
+    /* ============== GNOME Theme Variables ==================== */
+    --gnome-window-background: var(--theme-bg-3) !important;
+    --gnome-window-color: var(--theme-fg-0) !important;
+    --gnome-view-background: var(--theme-bg-2) !important;
+    --gnome-sidebar-background: var(--theme-bg-1) !important;
+    --gnome-secondary-sidebar-background: var(--theme-bg-4) !important;
+    --gnome-card-background: rgba(230, 234, 234, 0.08) !important;
+    --gnome-card-shade-color: rgba(0, 0, 6, 0.36) !important;
+    --gnome-menu-background: var(--theme-bg-1) !important;
+    --gnome-headerbar-background: var(--theme-bg-1) !important;
+    --gnome-headerbar-shade-color: rgba(0, 0, 0, 0.9) !important;
+    --gnome-toolbar-icon-fill: var(--theme-fg-0) !important;
+    --gnome-shade-color: rgba(0, 0, 6, 0.25) !important;
+    --gnome-private-wordmark: var(--theme-fg-0) !important;
+    --gnome-private-in-content-page-background: var(--theme-bg-3) !important;
+    --gnome-private-text-primary-color: var(--theme-fg-0) !important;
+
+    /* Backdrop colors for inactive windows */
+    &:-moz-window-inactive {
+      --gnome-headerbar-background: #111e21 !important;
+      --gnome-sidebar-background: #111e21 !important;
+      --gnome-secondary-sidebar-background: #0e1a1c !important;
+    }
+    
+    /* Additional GNOME variables for complete theming */
+    --gnome-view-color: var(--theme-fg-0) !important;
+    --gnome-menu-color: var(--theme-fg-0) !important;
+    --gnome-view-selected-background: var(--theme-accent-translucent-25) !important;
+    --gnome-view-selected-hover-background: var(--theme-accent-translucent-32) !important;
+    --gnome-view-selected-active-background: var(--theme-accent-translucent-39) !important;
+    --gnome-menu-shadow: 0 1px 5px 1px rgba(0, 0, 0, .3), 0 2px 14px 3px rgba(0, 0, 0, .2) !important;
+    --gnome-menu-separator-color: var(--theme-border) !important;
+    --gnome-border-color: var(--theme-border) !important;
+    --gnome-entry-background: var(--theme-bg-3) !important;
+    --gnome-entry-color: var(--theme-fg-0) !important;
+    --gnome-inactive-entry-color: var(--theme-fg-2) !important;
+    --gnome-button-background: var(--theme-bg-3) !important;
+    --gnome-button-hover-background: var(--theme-bg-3) !important;
+    --gnome-button-active-background: var(--theme-bg-4) !important;
+    --gnome-toolbar-background: var(--theme-bg-1) !important;
+    --gnome-toolbar-border-color: var(--theme-border) !important;
+    --gnome-tabbar-background: var(--theme-bg-1) !important;
+    --gnome-tabbar-tab-hover-background: var(--theme-bg-3) !important;
+    --gnome-tabbar-tab-active-background: var(--theme-bg-3) !important;
+    --gnome-tabbar-tab-active-hover-background: var(--theme-bg-4) !important;
+    --gnome-tabbar-tab-active-background-contrast: var(--theme-bg-2) !important;
+    --gnome-entry-focused-border-color: var(--theme-accent) !important;
+    --gnome-focus-border-color: var(--theme-accent-translucent-50) !important;
+    --gnome-selection-bg: rgba(122, 164, 161, 0.3) !important;
+    --gnome-accent-bg: var(--theme-accent) !important;
+    --gnome-accent: var(--theme-accent) !important;
+    
+    /* ============== Firefox CSS Theme Variables ==================== */
+    /* Main dark color, url bar, active tab etc. */
+    --firefoxcss-main-bg-color: var(--theme-bg-1) !important;
+
+    /* Main lighter color, toolbar background */
+    --firefoxcss-item-bg-color: var(--theme-bg-1) !important;
+
+    /* Tab colors */
+    --firefoxcss-tab-bg-color: var(--theme-bg-1) !important;
+    --firefoxcss-tab-hover-bg-color: var(--theme-bg-3) !important;
+    --firefoxcss-tab-active-bg-color: var(--theme-bg-3) !important;
+    --firefoxcss-non-active-tabs: #e6eaeacc !important;
+
+    --firefoxcss-normal-tabs-box-shadow: 1px 1px 1px -1px rgba(0, 0, 0, 0.4) !important;
+    --firefoxcss-tab-multiselect-outline: rgba(230, 234, 234, 0.1) !important;
+
+    /* Tab playing audio speaker icon colors */
+    --firefoxcss-tab-speaker-icon-color: var(--theme-fg-0) !important;
+    --firefoxcss-tab-speaker-icon-hover-color: #0a0f10 !important;
+    
+    /* New tab button color, active button hover */
+    --firefoxcss-new-tab-button-active: var(--theme-bg-3) !important;
+    
+    /* Bookmarks bar, and url bar hover colors */
+    --firefoxcss-bookmarks-bg-color: var(--theme-bg-1) !important;
+    --firefoxcss-customize-view-overflow-menu: var(--theme-bg-2) !important;
+    --firefoxcss-customize-view-flex-space: #cb7985 !important;
+    
+    /* Context menu */
+    --firefoxcss-contextmenu-hover-bg: var(--theme-accent-translucent-25) !important;
+    --firefoxcss-contextmenu-hover-text: var(--theme-fg-0) !important;
+    
+    /* This color is used to dim window when Hamburger menu is open. RGBA only. */
+    --firefoxcss-bright-flash-color: var(--theme-bg-1) !important;
+    
+    /* URL bar main color */
+    --firefoxcss-url-bar-bg-color: var(--theme-bg-1) !important;
+    
+    /* URL bar during page load colors */
+    --firefoxcss-url-loading-fill: var(--theme-accent) !important;
+    
+    /* URL bar breakout (expanded dropdown) */
+    --firefoxcss-url-breakout-bar-bg-color: var(--theme-bg-1) !important;
+    
+    /* URL autocomplete */
+    --firefoxcss-url-autocomplete-highlight: var(--theme-bg-3) !important;
+    
+    /* Status panel bg color (Bottom left url tooltip) */
+    --firefoxcss-statuspanel-bg-color: var(--theme-bg-1) !important;
+    
+    /* Downloads button fill on active downloads */
+    --firefoxcss-downloads-button-fill: var(--theme-accent) !important;
+    
+    /* URL bar border color */
+    --firefoxcss-url-dark-border: #0a0f10 !important;
+    
+    /* Toolbar color overrides */
+    --arrowpanel-background: var(--theme-bg-1) !important;
+    --dark-menu-background-color: var(--theme-bg-1) !important;
+    --toolbar-bgcolor: var(--theme-bg-3) !important;
+    --urlbarView-highlight-background: var(--theme-bg-3) !important;
+    --lwt-sidebar-background-color: var(--theme-bg-1) !important;
+    --in-content-page-background: var(--theme-bg-1) !important;
+  }
+}
+
+/* Sidebar colors */
+#sidebar-box,
+#sidebar {
+  background-color: var(--theme-bg-1) !important;
+  color: var(--theme-fg-0) !important;
+}
+
+/* Tab bar and tabs */
+#TabsToolbar,
+.tab-background[selected] {
+  background-color: var(--theme-bg-2) !important;
+}
+
+.tab-text {
+  color: var(--theme-fg-0) !important;
+}
+
+/* URL bar */
+#urlbar {
+  background-color: var(--theme-bg-3) !important;
+  color: var(--theme-fg-0) !important;
+  border-color: var(--theme-border) !important;
+}
+
+#urlbar[focused="true"] {
+  background-color: var(--theme-bg-4) !important;
+  border-color: var(--theme-accent) !important;
+}
+
+/* Bookmarks toolbar */
+#PersonalToolbar {
+  background-color: var(--theme-bg-1) !important;
+  color: var(--theme-fg-0) !important;
+}
+
+/* Menu and context menus */
+menupopup,
+.panel-arrowcontent {
+  background-color: var(--theme-bg-1) !important;
+  color: var(--theme-fg-0) !important;
+  border-color: var(--theme-border) !important;
+  box-shadow: none !important;
+}
+
+/* Remove outer popup backgrounds */
+panel,
+.panel-viewstack,
+menupopup > *:first-child {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Fix context menu background */
+menupopup#contentAreaContextMenu {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+menupopup#contentAreaContextMenu .scrollbox-innerbox {
+  background-color: var(--theme-bg-1) !important;
+  border-radius: 8px !important;
+}
+
+menuitem:hover,
+menu:hover {
+  background-color: var(--theme-accent-translucent-25) !important;
+}
+
+/* Download panel */
+#downloadsPanel {
+  background-color: var(--theme-bg-1) !important;
+  color: var(--theme-fg-0) !important;
+}
+
+/* Find bar */
+findbar {
+  background-color: var(--theme-bg-2) !important;
+  color: var(--theme-fg-0) !important;
+  border-top-color: var(--theme-border) !important;
+}
+
+/* Scrollbars (if using custom scrollbar styles) */
+scrollbar {
+  background-color: var(--theme-bg-1) !important;
+}
+
+scrollbar thumb {
+  background-color: var(--theme-bg-5) !important;
+}
+
+scrollbar thumb:hover {
+  background-color: var(--theme-accent-translucent-50) !important;
+}
+
+/* Buttons */
+button,
+toolbarbutton {
+  color: var(--theme-fg-0) !important;
+}
+
+button:hover,
+toolbarbutton:hover {
+  background-color: var(--theme-accent-translucent-25) !important;
+}
+
+button[checked="true"],
+toolbarbutton[checked="true"] {
+  background-color: var(--theme-accent-translucent-39) !important;
+  color: var(--theme-fg-1) !important;
+}
+
+/* Text selection */
+::selection {
+  background-color: var(--theme-accent-translucent-50) !important;
+  color: var(--theme-fg-1) !important;
+}
+
+/* Links */
+a,
+.text-link {
+  color: var(--theme-accent) !important;
+}
+
+a:hover,
+.text-link:hover {
+  color: var(--theme-accent-secondary) !important;
+}
+
+/* Error pages */
+.error-text {
+  color: #e85c51 !important;
+}
+
+/* Success messages */
+.success-text {
+  color: var(--theme-accent) !important;
+}
+
+/* Warning messages */
+.warning-text {
+  color: var(--theme-accent-secondary) !important;
+}
+
+/* Fix inactive window header/toolbar colors */
+:-moz-window-inactive #nav-bar,
+:-moz-window-inactive #TabsToolbar,
+:-moz-window-inactive #toolbar-menubar,
+:-moz-window-inactive #PersonalToolbar,
+:-moz-window-inactive .toolbox-tab {
+  background-color: var(--theme-bg-1) !important;
+}

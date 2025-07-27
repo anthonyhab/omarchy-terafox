@@ -1,0 +1,116 @@
+/* 
+ * Terafox GTK4/LibAdwaita Theme
+ * For use with ~/.config/gtk-4.0/gtk.css
+ */
+
+:root {
+  /* Window colors */
+  --window-bg-color: #152528;
+  --window-fg-color: #eaeeee;
+  
+  /* Header bar colors */
+  --headerbar-bg-color: #152528;
+  --headerbar-fg-color: #eaeeee;
+  --headerbar-border-color: #254147;
+  --headerbar-backdrop-color: #122123;
+  --headerbar-shade-color: rgba(0, 0, 0, 0.12);
+  
+  /* Card and popover colors */
+  --card-bg-color: #254147;
+  --card-fg-color: #e6eaea;
+  --card-shade-color: rgba(0, 0, 0, 0.12);
+  
+  --popover-bg-color: #254147;
+  --popover-fg-color: #e6eaea;
+  
+  /* View colors */
+  --view-bg-color: #152528;
+  --view-fg-color: #eaeeee;
+  
+  /* Sidebar colors */
+  --sidebar-bg-color: #152528;
+  --sidebar-fg-color: #eaeeee;
+  --sidebar-backdrop-color: #111e21;
+  --sidebar-shade-color: rgba(0, 0, 0, 0.07);
+  --sidebar-border-color: #254147;
+  
+  /* Secondary sidebar colors */
+  --secondary-sidebar-bg-color: #111e21;
+  --secondary-sidebar-fg-color: #eaeeee;
+  --secondary-sidebar-backdrop-color: #0e1a1c;
+  --secondary-sidebar-border-color: #254147;
+  
+  /* Thumbnail colors */
+  --thumbnail-bg-color: #1d3337;
+  --thumbnail-fg-color: #e6eaea;
+  
+  /* Button colors */
+  --accent-bg-color: #7aa4a1;
+  --accent-fg-color: #152528;
+  --accent-color: #7aa4a1;
+  
+  --destructive-bg-color: #e85c51;
+  --destructive-fg-color: #152528;
+  --destructive-color: #e85c51;
+  
+  /* Text colors */
+  --accent: #7aa4a1;
+  --info-bg-color: #5a93aa;
+  --info-fg-color: #152528;
+  --info-color: #5a93aa;
+  
+  --warning-bg-color: #fda47f;
+  --warning-fg-color: #152528;
+  --warning-color: #fda47f;
+  
+  --error-bg-color: #e85c51;
+  --error-fg-color: #152528;
+  --error-color: #e85c51;
+  
+  --success-bg-color: #7aa4a1;
+  --success-fg-color: #152528;
+  --success-color: #7aa4a1;
+  
+  /* Dialog colors */
+  --dialog-bg-color: #152528;
+  --dialog-fg-color: #e6eaea;
+  
+  /* Borders */
+  --border-color: rgba(229, 234, 234, 0.12);
+}
+
+/* Some apps need these legacy definitions */
+@define-color bg0 #0f1c1e;
+@define-color bg1 #152528;
+@define-color bg2 #1d3337;
+@define-color bg3 #254147;
+@define-color bg4 #2d4f56;
+@define-color fg0 #eaeeee;
+@define-color fg1 #e6eaea;
+@define-color fg2 #cbd9d8;
+@define-color fg3 #587b7b;
+@define-color red #e85c51;
+@define-color green #7aa4a1;
+@define-color yellow #fda47f;
+@define-color blue #5a93aa;
+@define-color magenta #ad5c7c;
+@define-color cyan #a1cdd8;
+@define-color orange #ff8349;
+@define-color pink #cb7985;
+
+/* System colors */
+@define-color accent_color #7aa4a1;
+@define-color accent_bg_color #7aa4a1;
+@define-color accent_fg_color #152528;
+@define-color destructive_color #e85c51;
+@define-color destructive_bg_color #e85c51;
+@define-color destructive_fg_color #152528;
+@define-color success_color #7aa4a1;
+@define-color success_bg_color #7aa4a1;
+@define-color success_fg_color #152528;
+@define-color warning_color #fda47f;
+@define-color warning_bg_color #fda47f;
+@define-color warning_fg_color #152528;
+@define-color error_color #e85c51;
+@define-color error_bg_color #e85c51;
+@define-color error_fg_color #152528;
